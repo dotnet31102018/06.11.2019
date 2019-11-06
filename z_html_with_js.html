@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My JS</title>
+</head>
+
+<body>
+  <hr>
+  <br>
+  <p>X : <input type="number" id="xid" name="xtxt" value="0"></p>
+  <p>Y : <input type="number" id="yid" name="ytxt" value="0"></p>
+  <!-- <button onclick="alert('clicked')">SUM</button> -->
+  <button onclick="dothis()">SUM</button>
+  <br>
+  <div id="result" style="color:green; font-weight:bold;"></div>
+</body>
+
+<script>
+  function dothis() {
+    var x = parseInt(document.getElementById("xid").value)
+    var y = parseInt(document.getElementById("yid").value)
+    //alert(`${x} + ${y} = ${x + y}`)
+    document.getElementById("result").innerHTML = `${x} + ${y} = ${x + y}`
+  }
+</script>
+
+</html>
